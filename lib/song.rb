@@ -21,7 +21,7 @@ class Song
     # artist_song_genre_array = file_name.split(" - ")
     # song = Song.new(artist_song_genre_array[1])
     # song.artist_name = artist_song_genre_array[0]
-    song = self.new(file_name.split(" - ")[0])
+    song = Song.new(file_name.split(" - ")[0])
     song.artist_name = file_name.split(" - ")[1]
     song
   end
