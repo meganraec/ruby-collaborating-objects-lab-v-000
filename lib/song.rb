@@ -17,8 +17,8 @@ class Song
     artistname = new_array[0]
     songname = new_array[1]
     instance = self.new(songname)
-    artist=(instance.artist_name = artistname)
-    artist.add_song(songname)
+    instance.artist_name = artistname
+    instance.artist.add_song(songname)
     instance
   end
 end
