@@ -31,7 +31,7 @@ class Artist
           return artist_object
           binding.pry
         else
-          self.new(artist_name)
+          Artist.new(artist_name)
         end
       end
   end
