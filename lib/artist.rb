@@ -29,6 +29,7 @@ class Artist
       @@all.each do |artist|
         if artist.name == artist_name
           return artist
+          binding.pry
         else
           return self.new(artist_name)
         end
