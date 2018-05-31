@@ -20,6 +20,6 @@ class Song
     songname = new_array[1]
     new_instance = self.new(songname)
     new_instance_artist = Artist.find_or_create_by_name(artistname)
-    new_instance_artist.add_song(songname)
+    new_instance_artist.add_song(new_instance)
   end
 end
