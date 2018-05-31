@@ -29,7 +29,7 @@ class Artist
       @@all.each do |artist_object|
         if artist_object.name == the_artists_name
           return artist_object
-        else
+        end
           return self.new(artist_name)
         end
       end
