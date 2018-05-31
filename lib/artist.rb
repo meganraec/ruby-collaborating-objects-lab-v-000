@@ -22,7 +22,7 @@ class Artist
   end
 
   def save
-    # self.class.all << self
+    # self.class.all << self #See initialize above
   end
 
   def self.find_or_create_by_name(artist_name)
