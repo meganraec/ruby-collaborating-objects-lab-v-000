@@ -18,7 +18,7 @@ class Song
     new_array = file_name.split(" - ")
     artistname = new_array[1]
     songname = new_array[0]
-    Song.new(songname)
+    self.new(songname)
         binding.pry
     song.artist = Artist.new(artistname)
     song.artist.add_song(songname)
