@@ -30,7 +30,7 @@ class Artist
         if artist_object.name == the_artists_name
           return artist_object
         else
-          Artist.new(artist_name)
+          return self.new(artist_name)
         end
       end
   end
