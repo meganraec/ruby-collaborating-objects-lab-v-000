@@ -32,7 +32,6 @@ class Artist
         else
           return self.new(artist_name)
         end
-        self.save
       end
   end
 
