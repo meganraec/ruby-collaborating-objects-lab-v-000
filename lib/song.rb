@@ -21,7 +21,5 @@ class Song
     new_instance = Song.new(songname)
     new_instance.artist.find_or_create_by_name(artistname)
     new_instance.artist.add_song(songname)
-    # song.artist = Artist.new(artistname)
-    # song.artist.add_song(songname)
   end
 end
