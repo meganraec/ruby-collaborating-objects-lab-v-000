@@ -20,6 +20,7 @@ class Song
     songname = new_array[1]
     instance = self.new(songname)
     instance.artist_name = artistname
+    binding.pry
     instance
   end
 end
