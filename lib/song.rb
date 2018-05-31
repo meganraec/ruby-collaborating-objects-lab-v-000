@@ -1,5 +1,5 @@
 class Song
-  attr_accessor :name, :artist
+  attr_accessor :name, :artist, :artist_name
 
   @@all = []
 
@@ -8,9 +8,10 @@ class Song
     @artist = artist
   end
 
-  def self.artist_name=(name)
-    songs_artist = Artist.find_or_create_by_name(name)
+  def self.artist_name=(artist_name)
+    songs_artist = Artist.find_or_create_by_name(artist_name)
     self.artist = songs_artist
+    self
   end
 
 #new_by_filename will strip ".mp3" from the filename, then parse it into its Artist and Song
