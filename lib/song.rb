@@ -21,13 +21,3 @@ class Song
     song
   end
 end
-
-
-
-
-
-
-
-# artist_song_genre_array = file_name.split(" - ")
-# song = Song.new(artist_song_genre_array[1])
-# song.artist_name = artist_song_genre_array[0]
