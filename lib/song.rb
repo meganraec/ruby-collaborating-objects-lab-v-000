@@ -20,6 +20,7 @@ class Song
     songname = new_array[1]
     new_instance = Song.new(songname)
     new_instance.artist_name=(Artist.find_or_create_by_name(artistname))
+    binding.pry
     new_instance.artist.add_song(songname)
   end
 end
