@@ -18,8 +18,7 @@ class Song
     new_array = file_name.split(" - ")
     song = Song.new(new_array[0])
     artistname = new_array[1]
-        binding.pry
-    song.artist_name = artistname
+    song.artist = Artist.new(artistname)
     song
   end
 end
