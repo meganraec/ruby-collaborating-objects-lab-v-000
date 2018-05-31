@@ -19,8 +19,9 @@ class Song
     artistname = new_array[1]
     songname = new_array[0]
     Song.new(songname)
+        binding.pry
     song.artist = Artist.new(artistname)
     song.artist.add_song(songname)
-    binding.pry
+
   end
 end
