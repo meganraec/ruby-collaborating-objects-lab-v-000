@@ -18,7 +18,7 @@ class Song
     new_array = file_name.split(" - ")
     artistname = new_array[0]
     songname = new_array[1]
-    self.new(songname) = instance
+    instance = self.new("#{songname}")
     instance.artist_name=(artistname)
     # instance.artist.add_song(instance)
     instance
