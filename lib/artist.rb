@@ -18,6 +18,7 @@ class Artist
 
   def add_song(name)
     self.songs << name
+    self.save
   end
 
   def save
