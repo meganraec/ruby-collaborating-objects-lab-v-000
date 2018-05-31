@@ -9,8 +9,10 @@ class Song
   end
 
   def self.artist_name=(name)
-    self.artist = Artist.find_or_create_by_name(name)
-    artist.add_song(self)
+    songs_artist = Artist.find_or_create_by_name(name)
+    self.artist = songs_artist
+    # self.artist = Artist.find_or_create_by_name(name)
+    # artist.add_song(self)
   end
 
 #new_by_filename will strip ".mp3" from the filename, then parse it into its Artist and Song
