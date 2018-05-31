@@ -29,7 +29,6 @@ class Artist
       @@all.each do |artist_object|
         if artist_object.name == the_artists_name
           return artist_object
-          binding.pry
         else
           Artist.new(artist_name)
         end
