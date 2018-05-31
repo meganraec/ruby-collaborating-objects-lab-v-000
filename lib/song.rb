@@ -19,7 +19,7 @@ class Song
     artistname = new_array[0]
     songname = new_array[1]
     instance = self.new(songname)
-    instance.artist_name=(artistname)
+    instance.artist = artistname
     binding.pry
     instance.artist.add_song(instance)
     instance
