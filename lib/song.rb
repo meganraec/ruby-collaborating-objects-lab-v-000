@@ -1,17 +1,16 @@
 class Song
-  attr_accessor :name, :artist
+  attr_accessor :name, :artist_name
 
   @@all = []
 
   def initialize(name)
     @name = name
-    @artist = artist
+    # @artist_name = artist
   end
 
   def self.artist_name=(artist_name)
     songs_artist = Artist.find_or_create_by_name(artist_name)
-    self.artist = songs_artist
-    self
+    @artist = songs_artist
   end
 
 #new_by_filename will strip ".mp3" from the filename, then parse it into its Artist and Song
@@ -20,7 +19,7 @@ class Song
     artistname = new_array[0]
     songname = new_array[1]
     instance = self.new(songname)
-    instance.artist = artistname
+    instance.artist_name = artistname
     binding.pry
     instance
   end
