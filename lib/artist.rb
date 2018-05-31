@@ -31,7 +31,7 @@ class Artist
           return artist_object
         end
       end
-      self.new(artist_name)
+      self.new(the_artists_name)
   end
 
   def print_songs
