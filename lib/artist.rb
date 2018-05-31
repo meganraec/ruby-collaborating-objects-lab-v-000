@@ -30,9 +30,9 @@ class Artist
         if artist_object.name == the_artists_name
           return artist_object
         end
+      end
           self.new(artist_name)
         end
-      end
   end
 
   def print_songs
