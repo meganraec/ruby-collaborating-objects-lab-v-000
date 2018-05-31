@@ -14,11 +14,11 @@ class Song
 #new_by_filename will strip ".mp3" from the filename, then parse it into its Artist and Song
   def self.new_by_filename(file_name)
     new_array = file_name.split(" - ")
-    artistname = new_array[0]
-    songname = new_array[1]
-    instance = self.new(songname)
-    instance.artist_name = artistname
-    instance.artist.add_song(songname)
+    # artistname = new_array[0]
+    # songname = new_array[1]
+    instance = self.new(new_array[1])
+    instance.artist_name = new_array[0]
+    instance.artist.add_song(new_array[1])
     instance
   end
 end
