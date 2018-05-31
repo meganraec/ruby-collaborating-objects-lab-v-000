@@ -18,9 +18,9 @@ class Song
     new_array = file_name.split(" - ")
     artistname = new_array[0]
     songname = new_array[1]
-    new_instance = self.new(songname)
-    new_instance.artist_name = artistname
-    new_instance_artist.add_song(new_instance)
-    new_instance
+    newinstance = self.new(songname)
+    newinstance.artist_name = artistname
+    newinstance_artist.add_song(new_instance)
+    newinstance
   end
 end
