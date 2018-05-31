@@ -10,6 +10,7 @@ class Song
 
   def artist_name=(artist_name)
     songs_artist = Artist.find_or_create_by_name(artist_name)
+        binding.pry
     @artist = songs_artist
     songs_artist
   end
@@ -21,7 +22,6 @@ class Song
     songname = new_array[1]
     instance = self.new(songname)
     instance.artist_name = artistname
-    binding.pry
     instance
   end
 end
